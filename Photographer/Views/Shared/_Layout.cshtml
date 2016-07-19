@@ -9,25 +9,25 @@
 
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
         <div class="container">
             <div class="navbar-header">
-                <div>
-                    <div>@Html.ActionLink("Андрей Кайманов", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+                <div class="brand-container">
+                    @Html.ActionLink("Андрей Кайманов", "Index", "Home")
                     <p>Санкт-Петербург / Пенза</p>
                     <p>Тел. / Telegram / Viber: +7 (903) 324 4476</p>
                 </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Портфолио", "Index", "Portfolio")</li>
-                    <li>@Html.ActionLink("Контакты", "Index", "Contact")</li>
-                </ul>
+            <div class="right">
+                <a target="_blank" href="http://vk.com/indrikozver"><img src="/Content/img/vk_logo.png" /></a>
+                <a target="_blank" href="http://instagram.com/andreykaymanov"><img src="/Content/img/instagram_logo.png" /></a>
             </div>
-            <div>
-                <a target="_blank" href="http://vk.com/indrikozver"><img src="/Content/img/vk_logo.png"/></a>
-                <a target="_blank" href="http://instagram.com/andreykaymanov"><img src="/Content/img/instagram_logo.png"/></a>
-            </div>
+        </div>
+        <div class="navbar-collapse collapse container">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("портфолио", "Index", "Portfolio")</li>
+                <li>@Html.ActionLink("контакты", "Index", "Contact")</li>
+            </ul>
         </div>
     </div>
     <div class="container body-content">

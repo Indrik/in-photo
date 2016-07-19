@@ -1,5 +1,6 @@
 ﻿body {
-    font-family: Arial, Helvetica, sans-serif;
+    color: #A8A8A8;
+    font-family: georgia, palatino, "book antiqua", "palatino linotype", serif;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -22,4 +23,70 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/* Custom Styles */
+h2 {
+    color: #606060;
+    font-size: 35px;
+}
+
+.right {
+    float: right;
+    position: relative;
+}
+
+.brand-container a {
+    color: #606060;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.brand-container p {
+    color: #A8A8A8;
+    font-size: 16px;
+    margin: 0;
+}
+
+.navbar .right {
+    margin-top: 20px;
+}
+
+
+.container ul {
+    padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	display: block;
+	font-size: 0;
+    float: none;
+}
+
+.container ul:before {
+	content:'';
+	height: 100%;
+	display: inline-block;
+}
+
+.container li {
+	margin: 0 20px;
+	font-size: 16px;
+	display: inline-block;
+    float: none;
+}
+
+.container ul:before, li {
+	vertical-align: middle;
+}
+
+.container li a {
+    color: #CFCFCF;
+	padding: 0;
+    font-style: italic;
+}
+
+.container li a:hover {
+    background-color: #ffffff;
+    color: #606060;
 }
