@@ -12,16 +12,14 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <h1>1</h1>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <div>
-                    @Html.ActionLink("Андрей Кайманов", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Андрей Кайманов", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
                     <p>Санкт-Петербург / Пенза</p>
-                    <p>Тел. / Telegram / Viber: +7 (903) 324 4476</p>
+                    <p>Тел. / Telegram: +7 (903) 324 4476</p>
+                </div>
+                <div>
+                    <a target="_blank" href="http://vk.com/indrikozver"><img src="/Content/img/vk_logo.png"/></a>
+                    <a target="_blank" href="http://instagram.com/andreykaymanov"><img src="/Content/img/instagram_logo.png"/></a>
                 </div>
             </div>
             <div class="navbar-collapse collapse">
