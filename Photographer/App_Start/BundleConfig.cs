@@ -25,10 +25,10 @@ namespace Photographer
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/jquery.fancybox.css"));
+                      "~/Content/fancybox/jquery.fancybox.css"));
 
             bundles.Add(new ScriptBundle("~/fancyboxJs").Include(
-                "~/Scripts/custom/jquery.fancybox.pack.js"
+                "~/Content/fancybox/jquery.fancybox.pack.js"
                 ));
         }
     }
