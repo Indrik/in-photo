@@ -5,9 +5,16 @@ namespace Photographer.Services
 {
     public class PhotoGalleryService : IPhotoGalleryService
     {
+        private readonly IPhotoGalleryDao _photoGalleryDao;
+
+        public PhotoGalleryService(IPhotoGalleryDao photoGalleryDao)
+        {
+            _photoGalleryDao = photoGalleryDao;
+        }
+
         public List<string> GetGalleryFileNames(string galleryName)
         {
-            return new List<string>();
+            return _photoGalleryDao.GetGalleryFileNames(galleryName);
         }
     }
 }

@@ -36,6 +36,7 @@ namespace Photographer
 
             Register<IWebHandler>(Assembly.Load("Photographer.Handlers"));
             Register<IService>(Assembly.Load("Photographer.Services"));
+            Register<IService>(Assembly.Load("Photographer.Dao"));
         }
 
         private void Register<T>(Assembly assembly, Func<ILifetime> lifetimeFactory = null)

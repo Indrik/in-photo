@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPhotoGalleryDao.cs" />
     <Compile Include="IPhotoGalleryHandler.cs" />
     <Compile Include="IPhotoGalleryService.cs" />
     <Compile Include="IService.cs" />
