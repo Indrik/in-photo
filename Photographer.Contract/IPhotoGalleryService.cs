@@ -2,7 +2,7 @@
 
 namespace Photographer.Contract
 {
-    public interface IPhotoGalleryService
+    public interface IPhotoGalleryService : IService
     {
         List<string> GetGalleryFileNames(string galleryName);
     }

@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="IPhotoGalleryHandler.cs" />
     <Compile Include="IPhotoGalleryService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="IWebHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

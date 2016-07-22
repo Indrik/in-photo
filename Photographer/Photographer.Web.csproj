@@ -297,6 +297,18 @@
       <Project>{399f21b8-4298-4aff-a523-26525247cb30}</Project>
       <Name>Photographer.Contract</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Photographer.Dao\Photographer.Dao.csproj">
+      <Project>{f6aa5d28-c495-497c-8606-f8b86f796295}</Project>
+      <Name>Photographer.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Photographer.Handlers\Photographer.Handlers.csproj">
+      <Project>{876f07ef-14e0-4aef-b172-bb388329660f}</Project>
+      <Name>Photographer.Handlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Photographer.Services\Photographer.Services.csproj">
+      <Project>{730f3b63-578a-45b5-ac7d-a0101af07d24}</Project>
+      <Name>Photographer.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
