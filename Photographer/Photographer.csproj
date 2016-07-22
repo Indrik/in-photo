@@ -261,6 +261,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\gallery\home\" />
     <Folder Include="Content\gallery\portfolio\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -269,6 +270,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Photographer.Contract\Photographer.Contract.csproj">
+      <Project>{399f21b8-4298-4aff-a523-26525247cb30}</Project>
+      <Name>Photographer.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
