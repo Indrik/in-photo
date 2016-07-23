@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using LightInject;
-using Photographer.Contract;
+using Photographer.Contract.Interfaces;
 
 namespace Photographer
 {

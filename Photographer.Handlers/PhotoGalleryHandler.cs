@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Photographer.Contract;
+using Photographer.Contract.Interfaces;
+using Photographer.Contract.Models;
 
 namespace Photographer.Handlers
 {
@@ -12,7 +13,7 @@ namespace Photographer.Handlers
             _photoGalleryService = photoGalleryService;
         }
 
-        public List<string> GetPhotoGallery(string galleryName)
+        public List<GalleryItem> GetPhotoGallery(string galleryName)
         {
             return _photoGalleryService.GetGalleryFileNames(galleryName);
         }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Photographer.Contract;
+using Photographer.Contract.Interfaces;
+using Photographer.Contract.Models;
 
 namespace Photographer.Services
 {
@@ -12,7 +13,7 @@ namespace Photographer.Services
             _photoGalleryDao = photoGalleryDao;
         }
 
-        public List<string> GetGalleryFileNames(string galleryName)
+        public List<GalleryItem> GetGalleryFileNames(string galleryName)
         {
             return _photoGalleryDao.GetGalleryFileNames(galleryName);
         }

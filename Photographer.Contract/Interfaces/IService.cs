@@ -1,4 +1,4 @@
-﻿namespace Photographer.Contract
+﻿namespace Photographer.Contract.Interfaces
 {
     public interface IService
     {

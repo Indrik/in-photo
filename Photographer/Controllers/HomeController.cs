@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Photographer.Contract;
+using Photographer.Contract.Interfaces;
+using Photographer.Contract.Models;
 
 namespace Photographer.Controllers
 {
@@ -15,7 +16,7 @@ namespace Photographer.Controllers
 
         public ActionResult Index()
         {
-            List<string> galleryList = _photoGalleryHandler.GetPhotoGallery("home");
+            List<GalleryItem> galleryList = _photoGalleryHandler.GetPhotoGallery("home");
 
             return View(galleryList);
         }

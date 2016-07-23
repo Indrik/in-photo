@@ -2,18 +2,15 @@
     ViewBag.Title = "Главнаяя";
 }
 
-<a class="fancybox" rel="gallery1" href="/Content/gallery/home/1_b.jpg" title="Morning Godafoss (Brads5)">
-    <img src="/Content/gallery/home/1_s.jpg" alt="" />
-</a>
-<a class="fancybox" rel="gallery1" href="/Content/gallery/home/2_b.jpg" title="Morning Godafoss (Brads5)">
-    <img src="/Content/gallery/home/2_s.jpg" alt="" />
-</a>
-<a class="fancybox" rel="gallery1" href="/Content/gallery/home/3_b.jpg" title="Morning Godafoss (Brads5)">
-    <img src="/Content/gallery/home/3_s.jpg" alt="" />
-</a>
-<a class="fancybox" rel="gallery1" href="/Content/gallery/home/4_b.jpg" title="Morning Godafoss (Brads5)">
-    <img src="/Content/gallery/home/4_s.jpg" alt="" />
-</a>
+@model List<Photographer.Contract.Models.GalleryItem>
+
+
+@foreach (var item in Model)
+{
+    <a class="fancybox" rel="gallery1" href="/Content/gallery/home/@item.BigFileName" title="">
+        <img src="/Content/gallery/home/@item.SmallFileName" alt="" />
+    </a>
+}
 
 
 @Scripts.Render("~/bundles/jquery")

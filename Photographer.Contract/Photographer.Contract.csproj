@@ -40,13 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPhotoGalleryDao.cs" />
-    <Compile Include="IPhotoGalleryHandler.cs" />
-    <Compile Include="IPhotoGalleryService.cs" />
-    <Compile Include="IService.cs" />
-    <Compile Include="IWebHandler.cs" />
+    <Compile Include="Interfaces\IPhotoGalleryDao.cs" />
+    <Compile Include="Interfaces\IPhotoGalleryHandler.cs" />
+    <Compile Include="Interfaces\IPhotoGalleryService.cs" />
+    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="Interfaces\IWebHandler.cs" />
+    <Compile Include="Models\GalleryItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
