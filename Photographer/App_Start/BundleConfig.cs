@@ -30,6 +30,11 @@ namespace Photographer
             bundles.Add(new ScriptBundle("~/fancyboxJs").Include(
                 "~/Content/fancybox/jquery.fancybox.pack.js"
                 ));
+
+            bundles.Add(new ScriptBundle("~/collagePlusJs").Include(
+                "~/Scripts/jquery.collagePlus*",
+                "~/Scripts/jquery.removeWhitespace*"
+                ));
         }
     }
 }

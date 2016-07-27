@@ -5,23 +5,56 @@
 @model List<Photographer.Contract.Models.GalleryItem>
 
 
-@foreach (var item in Model)
-{
-    <a class="fancybox" rel="gallery1" href="/Content/gallery/home/@item.BigFileName" title="">
-        <img src="/Content/gallery/home/@item.SmallFileName" alt="" />
-    </a>
-}
+<div class="Collage">
+    @foreach (var item in Model)
+    {
+        <a class="fancybox" rel="gallery1" href="/Content/gallery/home/@item.BigFileName" title="">
+            <img src="/Content/gallery/home/@item.SmallFileName" alt="" />
+        </a>
+    }
+</div>
 
 
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/fancyboxJs")
+@Scripts.Render("~/collagePlusJs")
+
+@*<script type="text/javascript">*@
+@*    $(document).ready(function () {*@
+@*        $('.fancybox').fancybox({*@
+@*            openEffect: 'elastic',*@
+@*            closeEffect: 'elastic',*@
+@*            title: null*@
+@*        });*@
+@*    });*@
+@*//    $('.Collage').removeWhitespace().collagePlus();*@
+@*    $(window).load(function () {*@
+@*        $('.Collage').collagePlus();*@
+@*    });*@
+@*</script>*@
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.fancybox').fancybox({
-            openEffect: 'elastic',
-            closeEffect: 'elastic',
-            title: null
+
+        $(document).ready(function(){
+            collage();
         });
+
+
+    function collage() {
+        debugger;
+        $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed'     : 2000,
+                'targetHeight': 300
+            }
+        );
+    };
+
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
     });
+
 </script>
