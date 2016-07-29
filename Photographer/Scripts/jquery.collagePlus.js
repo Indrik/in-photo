@@ -46,7 +46,7 @@
             // padding between the images. Using padding left as we assume padding is even all the way round
             $.fn.collagePlus.defaults.padding       = parseFloat( $this.css('padding-left') );
             // object that contains the images to collage
-            $.fn.collagePlus.defaults.images        = $this.children();
+            $.fn.collagePlus.defaults.images = $this.find("img");
 
             var settings = $.extend({}, $.fn.collagePlus.defaults, options);
 
